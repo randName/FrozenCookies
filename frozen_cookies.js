@@ -1,10 +1,10 @@
-// Global Variables
+3/ Global Variables
 var scriptElement = document.getElementById('frozenCookieScript') !== null ?
 		document.getElementById('frozenCookieScript') : 
 		document.getElementById('modscript_frozen_cookies'),
 	baseUrl = scriptElement !== null ?
 		scriptElement.getAttribute('src').replace(/\/frozen_cookies\.js$/, '') :
-		'https://rawgit.com/haerik/FrozenCookies/master',
+		'https://rawgit.com/randName/FrozenCookies/master',
 	FrozenCookies = {
 		'baseUrl': baseUrl,
 		'branch' : 'Beta-',
@@ -60,7 +60,7 @@ function loadScript(id) {
 function fcInit() {
   var jquery = document.createElement('script');
   jquery.setAttribute('type', 'text/javascript');
-  jquery.setAttribute('src', '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js');
+  jquery.setAttribute('src', '//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js');
   jquery.onload = function() {loadScript(0);};
   document.head.appendChild(jquery);
 }
