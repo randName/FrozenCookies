@@ -1,4 +1,4 @@
-3/ Global Variables
+// Global Variables
 var scriptElement = document.getElementById('frozenCookieScript') !== null ?
 		document.getElementById('frozenCookieScript') : 
 		document.getElementById('modscript_frozen_cookies'),
